@@ -30,7 +30,6 @@ void load_FontFamily(py::module m) {
 		.def(py::init<GS::UniString &, GSCharCode>(),
 			py::arg("name"),
 			py::arg("charCode") = GSCharCode::CC_Legacy)
-		.def(py::init<FontFamily &>())
 		.def(py::self == py::self)
 		.def(py::self != py::self)
 		.def("GetLocalName", &FontFamily::GetLocalName, py::return_value_policy::reference_internal)
