@@ -10,7 +10,7 @@
 
 PYBIND11_MODULE(TextEngine, m) {
 
-	m.def("version", []() {	return "version 0.0.1"; });
+	m.def("version", []() {	return "version 0.1.1"; });
 
 // --- Add bindings here ------------------------------------------------------------------
 
