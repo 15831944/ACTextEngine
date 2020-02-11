@@ -46,9 +46,9 @@ GetFirstEncoding(self) -> GSRoot.GSCharCode
 IsSubstituted(self) -> bool
 GetAveCharWidth(self,float) -> float
 GetLangInfo(self) -> int
-BeginInputSession(self,StackingMode=FontFamily.StackingMode.NonStackable) -> None
-EndInputSession(self) -> None
-BeginOutputSession(self,StackingMode=FontFamily.StackingMode.NonStackable) -> None
-EndOutputSession(self) -> None
-SetTEModeForWriteContentForChecksum(self,bool) -> None
+BeginInputSession(TextEngine.FontFamily.StackingMode = StackingMode.NonStackable) -> None
+EndInputSession() -> None
+BeginOutputSession(TextEngine.FontFamily.StackingMode = StackingMode.NonStackable) -> None
+EndOutputSession() -> None
+SetTEModeForWriteContentForChecksum(bool) -> None
 ```
