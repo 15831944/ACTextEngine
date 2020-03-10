@@ -23,28 +23,28 @@
 
 ```
 __init__(self) -> None
-__init__(self,unicode,GSRoot.GSCharCode=GSCharCode.CC_Legacy) -> None
+__init__(self, unicode, GSRoot.GSCharCode=GSCharCode.CC_Legacy) -> None
 
 __eq__(self,right) -> bool
 __ne__(self,right) -> bool
 GetLocalName(self) -> unicode
 GetActualLocalName(self) -> unicode
-GetFontNameWidthScriptName(self,GSRoot.GSCharCode,unicode) -> bool
+GetFontNameWidthScriptName(self, GSRoot.GSCharCode, unicode) -> bool
 GetMacFontIdentifier(self) -> unicode
 GetFamilyGroupName(self) -> unicode
 GetMacTypefaceName(self) -> unicode
-GetMaxCharWidth(self,float) -> float
+GetMaxCharWidth(self, float) -> float
 GetSpaceIndex(self) -> int
 GetCapISize(self,float) -> float
 GetTypoSize(self,float) -> float
 GetAscent(self,float) -> float
 GetDescent(self,float) -> float
 GetLeading(self,float) -> float
-GetEncodingsNum(self) -> unsigned int
+GetEncodingsNum(self) -> int
 GetEncoding(self,int) -> GSRoot.GSCharCode
 GetFirstEncoding(self) -> GSRoot.GSCharCode
 IsSubstituted(self) -> bool
-GetAveCharWidth(self,float) -> float
+GetAveCharWidth(self, float) -> float
 GetLangInfo(self) -> int
 BeginInputSession(TextEngine.FontFamily.StackingMode = StackingMode.NonStackable) -> None
 EndInputSession() -> None
